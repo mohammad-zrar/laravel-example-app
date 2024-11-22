@@ -12,7 +12,7 @@
                 <div class="sm:col-span-4">
                     <x-form-label for="email">Email</x-form-label>
                     <div class="mt-2">
-                        <x-form-input name="email" id="email" type="email" required />
+                        <x-form-input name="email" id="email" type="email" :value="old('email')" required />
                         <x-form-error name="email" />
                     </div>
                 </div>
@@ -20,16 +20,15 @@
                 <div class="sm:col-span-4">
                     <x-form-label for="passwrod">Password</x-form-label>
                     <div class="mt-2">
-                        <x-form-input name="passwrod" id="passwrod" type="passwrod" required />
-                        <x-form-error name="passwrod" />
+                        <x-form-input name="password" id="password" type="password" required />
+                        <x-form-error name="password" />
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="mt-6 flex items-center justify-end gap-x-6 px-8">
-            <a href="/" class="text-sm/6 font-semibold text-gray-900">Cancel</a>
-            <x-form-button>Register</x-form-button>
+            <x-form-button>Log In</x-form-button>
         </div>
     </form>
 
